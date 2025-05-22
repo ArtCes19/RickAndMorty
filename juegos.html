@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rick and Morty - Juego de Naves</title>
+
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/efectos.css" />
+</head>
+
+<body>
+
+  <nav class="mi-navbar">
+    <div class="mi-navbar-container">
+      <a href="index.html" class="logo">
+        <img src="img/Rick-and-Morty.png" alt="Logo" />
+        <span>ArtCes</span>
+      </a>
+
+      <div class="hamburguesa" id="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#trailers">Trailers</a>
+        <a href="index.html#personajes">Personajes</a>
+        <a href="efectos.html">Efectos</a>
+        <a href="juegos.html">Juegos</a>
+      </div>
+
+      <div class="acciones">
+        <a href="#">Inicio de Sección</a>
+        <span>|</span>
+        <a href="#">Ayuda</a>
+      </div>
+    </div>
+  </nav>
+  <header class="fondo1">
+    <img src="img/fondo.webp" alt="Portada" />
+  </header>
+
+  <main class="contenido">
+    <section class="intro">
+      <div>
+        <h1 class="text-primary">¡Bienvenido al juego de Naves</h1>
+        <p style="max-width: 900px; text-align: justify;">
+          ¡Este es un juego para verdaderos fanáticos de Rick and Morty! Si te encanta la locura
+          interdimensional, las aventuras extravagantes y los personajes únicos, ¡este desafío es para ti!
+          Participa, demuestra cuánto sabes y ¡gana premios que ni Rick podría inventar!
+        </p>
+      </div>
+    </section>
+
+    <section style="text-align: center; margin-top: 40px;">
+      <div id="contador">
+        <h2>Puntos: 0</h2>
+      </div>
+
+      <div id="area-juego" style="position: relative; min-height: 300px; margin-top: 40px;">
+        <div class="nave"></div>
+      </div>
+
+      <div id="mensaje-perdida" style="margin-top: 20px;">
+        <h2>¡Perdiste! Recargando...</h2>
+      </div>
+
+      <button id="iniciar-boton"
+        style="background-color: #ffc107; color: black; height: 50px; margin-top: 30px; border: none; padding: 0 20px; font-weight: bold; cursor: pointer;">
+        Iniciar Juego
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
+      <div>
+        <a href="https://www.facebook.com/share/16SmxUpRkY/"><img src="img/face.png" height="50" width="80"
+            alt="Facebook" /></a>
+        <a href="https://www.instagram.com/art__ces?igsh=MTAyd2RpZno3aHFndw==&utm_source=ig_contact_invite"><img
+            src="img/insta.png" height="50" width="50" alt="Instagram" /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9sar-artavia-mora-35558b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+            src="img/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector-removebg-preview.png" height="400"
+            width="400" alt="Linkedin" /></a>
+      </div>
+      <div style="color: #c5c6c7; text-align: center;">
+        <p>Todos los Derechos de Autor están reservados</p>
+        <p>Numero: 87551493</p>
+        <p>Correo: cmora558@gmail.com</p>
+      </div>
+      <div>
+        <img src="img/rick despedida.gif" alt="Despedida" class="img-fluid"
+          style="max-width: 180px; opacity: 0.8; transition: opacity 0.3s;" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const hamburguesa = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu');
+
+    hamburguesa.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
